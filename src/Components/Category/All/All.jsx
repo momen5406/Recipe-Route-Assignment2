@@ -25,7 +25,7 @@ const All = () => {
 
   return (
     <div className='px-10'>
-      <div className="grid md:grid-cols-4 xs:grid-cols-2 gap-8 gap-y-16 my-10">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-2 gap-8 gap-y-16 my-10">
         {isLoading 
           ? (
             Array.from({length: 8}).map((_, index) => (

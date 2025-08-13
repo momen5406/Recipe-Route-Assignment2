@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from "../../assets/logo.png";
 
-
 const Footer = () => {
   return (
     <div className='relative z-50 bg-white md:px-[100px] p-5'>

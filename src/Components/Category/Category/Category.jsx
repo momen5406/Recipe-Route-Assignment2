@@ -27,7 +27,7 @@ const Category = () => {
 
   return (
       <div className='px-10'>
-      <div className="grid md:grid-cols-4 xs:grid-cols-2 gap-8 gap-y-16 my-10">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-2 gap-8 gap-y-16 my-10">
         {isLoading 
           ? (
             Array.from({length: 8}).map((_, index) => (
@@ -41,7 +41,6 @@ const Category = () => {
               </div>
             ))
           ) : (
-            // Render real meal cards
             meals.map(meal => (
               <div key={meal.idMeal} className="group bg-white p-5 rounded-4xl text-center transition-all duration-600 hover:scale-105 hover:shadow-2xl">
                 <img className='group-hover:rotate-360 transition-all duration-600 rounded-full shadow-2xl w-3/4 mx-auto relative -top-10' src={meal.strMealThumb} alt={meal.strMeal} />
