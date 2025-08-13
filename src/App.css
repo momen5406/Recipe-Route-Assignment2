@@ -1,0 +1,10 @@
+body {
+  font-family: cursive;
+  background-color: var(--color-orange-50);
+}
+
+.active {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
