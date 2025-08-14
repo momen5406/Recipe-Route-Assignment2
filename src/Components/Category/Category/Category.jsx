@@ -44,7 +44,7 @@ const Category = () => {
             meals.map(meal => (
               <div key={meal.idMeal} className="group bg-white p-5 rounded-4xl text-center transition-all duration-600 hover:scale-105 hover:shadow-2xl">
                 <img className='group-hover:rotate-360 transition-all duration-600 rounded-full shadow-2xl w-3/4 mx-auto relative -top-10' src={meal.strMealThumb} alt={meal.strMeal} />
-                <h5 className='text-2xl font-semibold mb-4'>{meal.strMeal}</h5>
+                <h5 className='text-2xl font-semibold mb-4'>{meal.strMeal.split(' ').splice(0, 2).join(' ')}</h5>
                 <Link className='bg-secondary rounded-full text-white py-2 px-4 block hover:scale-105 hover:shadow-xl hover:bg-[#059669] transition-all duration-300' to={`/mealdetails/${meal.idMeal}`}>
                   View Recipe
                 </Link>

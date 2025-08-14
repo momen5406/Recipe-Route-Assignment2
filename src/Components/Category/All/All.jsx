@@ -43,7 +43,7 @@ const All = () => {
             meals.map(meal => (
               <div key={meal.idMeal} className="group bg-white p-5 rounded-4xl text-center transition-all duration-600 hover:scale-105 hover:shadow-2xl">
                 <img className='group-hover:rotate-360 transition-all duration-600 rounded-full shadow-2xl w-3/4 mx-auto relative -top-10' src={meal.strMealThumb} alt={meal.strMeal} />
-                <h5 className='text-2xl font-semibold mb-2'>{meal.strMeal}</h5>
+                <h5 className='text-2xl font-semibold mb-2'>{meal.strMeal.split(' ').splice(0, 2).join(' ')}</h5>
                 <span className='mb-6 text-secondary flex items-center justify-center gap-2'>
                   <i className="fa-solid fa-earth-americas"></i>{meal.strArea}
                 </span>
